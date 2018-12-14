@@ -57,6 +57,18 @@ private let <#name#>Button = UIButton(type: .custom)
 
 ### Rx
 
+#### behavior-relay
+
+```swift
+private let <#name#>Relay = BehaviorRelay<<#Type#>>(value: <#initialValue#>)
+```
+
+#### publish-relay
+
+```swift
+private let <#name#>Relay = PublishRelay<<#Type#>>()
+```
+
 #### binder
 
 ```swift
