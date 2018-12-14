@@ -27,13 +27,37 @@ xcodesnippet install Sources/binder.swift
 
 ## Templates
 
-### mark
+### Common
+
+#### mark
 
 ```swift
 // MARK: - <#Title#>
 ```
 
-### binder
+### UI
+
+#### image-view
+
+```swift
+private let <#name#>ImageView = UIImageView()
+```
+
+#### label
+
+```swift
+private let <#name#>Label = UILabel()
+```
+
+#### button
+
+```swift
+private let <#name#>Button = UIButton(type: .custom)
+```
+
+### Rx
+
+#### binder
 
 ```swift
 var <#name#>Binder: Binder<<#type#>> {
@@ -43,15 +67,17 @@ var <#name#>Binder: Binder<<#type#>> {
 }
 ```
 
-### configurable-cell
+#### var-driver
 
 ```swift
-extension <#CellName#>: ConfigurableCell {
-
-    func configure(with viewModel: <#ViewModelType#>) {
-        self.viewModel = viewModel
-
-        <#configuration#>
-    }
+var <#name#>Driver: Driver<<#type#>> {
+    return <#code#>
 }
 ```
+
+#### disposebag
+
+```swift
+private let disposeBag = DisposeBag()
+```
+
