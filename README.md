@@ -55,6 +55,12 @@ private let <#name#>Label = UILabel()
 private let <#name#>Button = UIButton(type: .custom)
 ```
 
+#### container-view
+
+```swift
+private let <#name#>ContainerView = UIView()
+```
+
 ### Rx
 
 #### behavior-relay
