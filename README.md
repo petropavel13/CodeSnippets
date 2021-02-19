@@ -61,6 +61,56 @@ private let <#name#>Button = UIButton(type: .custom)
 private let <#name#>ContainerView = UIView()
 ```
 
+#### add-views
+
+```swift
+override func addViews() {
+    super.addViews()
+
+    addSubviews(<#T##views: UIView...##UIView#>)
+}
+```
+
+#### bind-views
+
+```swift
+override func bindViews() {
+    super.bindViews()
+
+    <#views binding#>
+}
+```
+
+#### configure-appearance
+
+```swift
+override func configureAppearance() {
+    super.configureAppearance()
+
+    <#views configuration#>
+}
+```
+
+#### configure-layout
+
+```swift
+override func configureLayout() {
+    super.configureLayout()
+
+    <#layout configuration#>
+}
+```
+
+#### localize
+
+```swift
+override func localize() {
+    super.localize()
+
+    <#localize views#>
+}
+```
+
 ### Rx
 
 #### behavior-relay
