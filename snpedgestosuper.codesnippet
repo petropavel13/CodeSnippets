@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tidisposebag</string>
+	<string>snpedgestosuper</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private let disposeBag = DisposeBag()</string>
+	<string>$0.edges.equalToSuperview()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F0BDC7D8-737B-4EB3-9261-AE934BA84D2A</string>
+	<string>CD3261B9-DCB5-4FDC-A70A-440E146BFF3A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>RxSwift DisposeBag let declaration inside class scope.</string>
+	<string>Activate edges constraints of the view relative to the superview</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DisposeBag let declaration</string>
+	<string>Edges constraints relative to the superview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

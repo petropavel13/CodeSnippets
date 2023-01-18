@@ -10,6 +10,10 @@ OR
 
 Clone/Download the project on your machine and paste the .codesnippets file in ```~/Library/Developer/Xcode/UserData/CodeSnippets/```
 
+OR
+
+Clone/Download the project on your machine and run ```./move_snippets.py```. This will clone every snippet into your ```~/Library/Developer/Xcode/UserData/CodeSnippets/``` folder.
+
 ### Install partucular templates
 
 #### Install `xcodesnippet`
@@ -37,31 +41,31 @@ xcodesnippet install Sources/binder.swift
 
 ### UI
 
-#### image-view
+#### tiimageview
 
 ```swift
 private let <#name#>ImageView = UIImageView()
 ```
 
-#### label
+#### tilabel
 
 ```swift
 private let <#name#>Label = UILabel()
 ```
 
-#### button
+#### tibutton
 
 ```swift
 private let <#name#>Button = UIButton(type: .custom)
 ```
 
-#### container-view
+#### ticontainerview
 
 ```swift
 private let <#name#>ContainerView = UIView()
 ```
 
-#### add-views
+#### tiaddviews
 
 ```swift
 override func addViews() {
@@ -71,7 +75,7 @@ override func addViews() {
 }
 ```
 
-#### bind-views
+#### tibindviews
 
 ```swift
 override func bindViews() {
@@ -81,7 +85,7 @@ override func bindViews() {
 }
 ```
 
-#### configure-appearance
+#### ticonfigureappearance
 
 ```swift
 override func configureAppearance() {
@@ -91,7 +95,7 @@ override func configureAppearance() {
 }
 ```
 
-#### configure-layout
+#### ticonfigurelayout
 
 ```swift
 override func configureLayout() {
@@ -101,7 +105,7 @@ override func configureLayout() {
 }
 ```
 
-#### localize
+#### tilocalize
 
 ```swift
 override func localize() {
@@ -111,21 +115,197 @@ override func localize() {
 }
 ```
 
+#### ticonfigurewith
+
+```swift
+func configure(with <#ViewModelName#>: <#ViewModelType#>) {
+    <#configuration#>
+}
+```
+
+### SnapKit
+
+#### snpanymake
+
+```swift
+<#view#>.snp.makeConstraints {
+    <#constraints#>
+}
+```
+
+#### snpbottomhorizontaltosuper
+
+```swift
+$0.bottom.horizontalEdges.equalToSuperview()
+```
+
+#### snpbottomtoview
+
+```swift
+$0.bottom.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snpbuttonmake
+
+```swift
+<#name#>Button.snp.makeConstraints {
+    <#constraints#>
+}
+```
+
+#### snpcentertosuper
+
+```swift
+$0.center.equalToSuperview()
+```
+
+#### snpcenterxtosuper
+
+```swift
+$0.centerX.equalToSuperview()
+```
+
+#### snpcenterxtoview
+
+```swift
+$0.centerX.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snpcenterytosuper
+
+```swift
+$0.centerY.equalToSuperview()
+```
+
+#### snpcenterytoview
+
+```swift
+$0.centerY.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+
+#### snpedgestosuper
+
+```swift
+$0.edges.equalToSuperview()
+```
+
+
+#### snpedgestoview
+
+```swift
+$0.edges.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+
+#### snpheight
+
+```swift
+$0.height.equalTo(<#value#>)
+```
+
+
+#### snphorizontaltosuper
+
+```swift
+$0.horizontalEdges.equalToSuperview()
+```
+
+
+#### snphorizontaltoview
+
+```swift
+$0.horizontalEdges.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+
+#### snpimageviewmake
+
+```swift
+<#name#>ImageView.snp.makeConstraints {
+    <#constraints#>
+}
+```
+
+
+#### snplabelmake
+
+```swift
+<#name#>Label.snp.makeConstraints {
+    <#constraints#>
+}
+```
+
+
+#### snpleadingtoview
+
+```swift
+$0.leading.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+
+#### snpsize
+
+```swift
+$0.size.equalTo(<#value#>)
+```
+
+
+#### snptophorizontaltosuper
+
+```swift
+$0.top.horizontalEdges.equalToSuperview()
+```
+
+
+#### snptoptoview
+
+```swift
+$0.top.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+
+#### snptrailingtoview
+
+```swift
+$0.trailing.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snpverticaltosuper
+
+```swift
+$0.verticalEdges.equalToSuperview()
+```
+
+
+#### snpverticaltoview
+
+```swift
+$0.verticalEdges.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+
+#### snpwidth
+
+```swift
+$0.width.equalTo(<#value#>)
+```
+
 ### Rx
 
-#### behavior-relay
+#### tibehaviorrelay
 
 ```swift
 private let <#name#>Relay = BehaviorRelay<<#Type#>>(value: <#initialValue#>)
 ```
 
-#### publish-relay
+#### tipublishrelay
 
 ```swift
 private let <#name#>Relay = PublishRelay<<#Type#>>()
 ```
 
-#### binder
+#### tibinder
 
 ```swift
 var <#name#>Binder: Binder<<#type#>> {
@@ -135,7 +315,7 @@ var <#name#>Binder: Binder<<#type#>> {
 }
 ```
 
-#### var-driver
+#### tivardriver
 
 ```swift
 var <#name#>Driver: Driver<<#type#>> {
@@ -143,7 +323,7 @@ var <#name#>Driver: Driver<<#type#>> {
 }
 ```
 
-#### disposebag
+#### tidisposebag
 
 ```swift
 private let disposeBag = DisposeBag()

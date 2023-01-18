@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tidisposebag</string>
+	<string>snpbottomtoview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private let disposeBag = DisposeBag()</string>
+	<string>$0.bottom.equalTo(&lt;#view#&gt;.snp.&lt;#constraint#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F0BDC7D8-737B-4EB3-9261-AE934BA84D2A</string>
+	<string>4614EAEC-00F0-4F69-B1A4-5EAC94E6D2AA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>RxSwift DisposeBag let declaration inside class scope.</string>
+	<string>Activate bottom constraint of the view relative to generic view</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DisposeBag let declaration</string>
+	<string>Bottom constraints relative to generic view</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

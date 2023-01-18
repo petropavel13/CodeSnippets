@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tidisposebag</string>
+	<string>snpbuttonmake</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private let disposeBag = DisposeBag()</string>
+	<string>&lt;#name#&gt;Button.snp.makeConstraints {
+    &lt;#constraints#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F0BDC7D8-737B-4EB3-9261-AE934BA84D2A</string>
+	<string>47AC113E-D0ED-4020-9434-801252B0026D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>RxSwift DisposeBag let declaration inside class scope.</string>
+	<string>Make Button SnapKit constraints</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DisposeBag let declaration</string>
+	<string>Button SnapKit Constraints</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
