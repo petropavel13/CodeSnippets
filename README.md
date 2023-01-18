@@ -10,6 +10,10 @@ OR
 
 Clone/Download the project on your machine and paste the .codesnippets file in ```~/Library/Developer/Xcode/UserData/CodeSnippets/```
 
+OR
+
+Clone/Download the project on your machine and run ```./move_snippets.py```. This will clone every snippet into your ```~/Library/Developer/Xcode/UserData/CodeSnippets/``` folder.
+
 ### Install partucular templates
 
 #### Install `xcodesnippet`
@@ -37,31 +41,31 @@ xcodesnippet install Sources/binder.swift
 
 ### UI
 
-#### image-view
+#### tiimageview
 
 ```swift
 private let <#name#>ImageView = UIImageView()
 ```
 
-#### label
+#### tilabel
 
 ```swift
 private let <#name#>Label = UILabel()
 ```
 
-#### button
+#### tibutton
 
 ```swift
 private let <#name#>Button = UIButton(type: .custom)
 ```
 
-#### container-view
+#### ticontainerview
 
 ```swift
 private let <#name#>ContainerView = UIView()
 ```
 
-#### add-views
+#### tiaddviews
 
 ```swift
 override func addViews() {
@@ -71,7 +75,7 @@ override func addViews() {
 }
 ```
 
-#### bind-views
+#### tibindviews
 
 ```swift
 override func bindViews() {
@@ -81,7 +85,7 @@ override func bindViews() {
 }
 ```
 
-#### configure-appearance
+#### ticonfigureappearance
 
 ```swift
 override func configureAppearance() {
@@ -91,7 +95,7 @@ override func configureAppearance() {
 }
 ```
 
-#### configure-layout
+#### ticonfigurelayout
 
 ```swift
 override func configureLayout() {
@@ -101,7 +105,7 @@ override func configureLayout() {
 }
 ```
 
-#### localize
+#### tilocalize
 
 ```swift
 override func localize() {
@@ -111,41 +115,29 @@ override func localize() {
 }
 ```
 
-### Rx
-
-#### behavior-relay
+#### ticonfigurewith
 
 ```swift
-private let <#name#>Relay = BehaviorRelay<<#Type#>>(value: <#initialValue#>)
-```
-
-#### publish-relay
-
-```swift
-private let <#name#>Relay = PublishRelay<<#Type#>>()
-```
-
-#### binder
-
-```swift
-var <#name#>Binder: Binder<<#type#>> {
-    return Binder(self) { base, value in
-        <#code#>
-    }
+func configure(with <#ViewModelName#>: <#ViewModelType#>) {
+    <#configuration#>
 }
 ```
 
-#### var-driver
+### SnapKit
+
+#### snpanymake
 
 ```swift
-var <#name#>Driver: Driver<<#type#>> {
-    return <#code#>
+<#view#>.snp.makeConstraints {
+    <#constraints#>
 }
 ```
 
-#### disposebag
+#### snpimageviewmake
 
 ```swift
-private let disposeBag = DisposeBag()
+<#view#>.snp.makeConstraints {
+    $0.size.equalTo(<#value#>)
+    <#otherConstraints#>
+}
 ```
-

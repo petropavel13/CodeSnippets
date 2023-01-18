@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>behavior-relay</string>
+	<string>ticonfigurewith</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private let &lt;#name#&gt;Relay = BehaviorRelay&lt;&lt;#Type#&gt;&gt;(value: &lt;#initialValue#&gt;)</string>
+	<string>func configure(with &lt;#ViewModelName#&gt;: &lt;#ViewModelType#&gt;) {
+    &lt;#configuration#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8CC81B1C-AC64-4ABE-A703-19B2287F9156</string>
+	<string>FE60A621-D1F4-4051-BD62-8D4DD554E442</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>RxCocoa BehaviorRelay declaration inside class scope.</string>
+	<string>Conformance to Configurable type protocols</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>BehaviorRelay declaration</string>
+	<string>Configurable declaration</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
