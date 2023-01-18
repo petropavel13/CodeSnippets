@@ -20,26 +20,26 @@ def get_snippets(path):
             if os.path.isfile(os.path.join(path, f)) and SNIPPETS_EXT in f]
 
 
-def diff_snippets(snp1, snp2):
-    file_names = [os.path.basename(f) for f in snp2]
-    return [f for f in snp1 if os.path.basename(f) in file_names]
+def diff_snippets(new_snippets, old_snippets):
+    file_names = [os.path.basename(f) for f in old_snippets]
+    return [f for f in new_snippets if os.path.basename(f) in file_names]
 
 
 def ask_for_overriding():
     answer = " "
-    time = 0
+    attempt = 0
 
     while (answer not in "yn"):
-        if time == 3:
+        if attempt == 3:
             break
 
-        time += 1
+        attempt += 1
         answer = input("Do you want to override them: (y/n)? ")
 
         if answer not in "yn":
             print("Answer should be 'n' or 'y'")
 
-    return True if answer == "y" else False
+    return answer == "y"
 
 
 def copy_files(files):

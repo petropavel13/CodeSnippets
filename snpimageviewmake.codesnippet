@@ -9,7 +9,8 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#name#&gt;ImageView.snp.makeConstraints {
+	<string>&lt;#name#&gt;.snp.makeConstraints {
+    $0.size.equalTo(&lt;#value#&gt;)
     &lt;#constraints#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
