@@ -133,24 +133,52 @@ func configure(with <#ViewModelName#>: <#ViewModelType#>) {
 }
 ```
 
-#### snpbottomhorizontaltosuper
-
-```swift
-$0.bottom.horizontalEdges.equalToSuperview()
-```
-
-#### snpbottomtoview
-
-```swift
-$0.bottom.equalTo(<#view#>.snp.<#constraint#>)
-```
-
 #### snpbuttonmake
 
 ```swift
 <#name#>Button.snp.makeConstraints {
     <#constraints#>
 }
+```
+
+#### snpimageviewmake
+
+```swift
+<#name#>ImageView.snp.makeConstraints {
+    <#constraints#>
+}
+```
+
+#### snplabelmake
+
+```swift
+<#name#>Label.snp.makeConstraints {
+    <#constraints#>
+}
+```
+
+#### snpbottomhorizontaltosuper
+
+```swift
+$0.bottom.horizontalEdges.equalToSuperview()
+```
+
+#### snptophorizontaltosuper
+
+```swift
+$0.top.horizontalEdges.equalToSuperview()
+```
+
+#### snphorizontaltosuper
+
+```swift
+$0.horizontalEdges.equalToSuperview()
+```
+
+#### snpverticaltosuper
+
+```swift
+$0.verticalEdges.equalToSuperview()
 ```
 
 #### snpcentertosuper
@@ -165,16 +193,58 @@ $0.center.equalToSuperview()
 $0.centerX.equalToSuperview()
 ```
 
-#### snpcenterxtoview
-
-```swift
-$0.centerX.equalTo(<#view#>.snp.<#constraint#>)
-```
-
 #### snpcenterytosuper
 
 ```swift
 $0.centerY.equalToSuperview()
+```
+
+#### snpedgestosuper
+
+```swift
+$0.edges.equalToSuperview()
+```
+
+#### snpbottomtoview
+
+```swift
+$0.bottom.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snptoptoview
+
+```swift
+$0.top.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snphorizontaltoview
+
+```swift
+$0.horizontalEdges.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snpverticaltoview
+
+```swift
+$0.verticalEdges.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snpleadingtoview
+
+```swift
+$0.leading.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snptrailingtoview
+
+```swift
+$0.trailing.equalTo(<#view#>.snp.<#constraint#>)
+```
+
+#### snpcenterxtoview
+
+```swift
+$0.centerX.equalTo(<#view#>.snp.<#constraint#>)
 ```
 
 #### snpcenterytoview
@@ -183,66 +253,11 @@ $0.centerY.equalToSuperview()
 $0.centerY.equalTo(<#view#>.snp.<#constraint#>)
 ```
 
-
-#### snpedgestosuper
-
-```swift
-$0.edges.equalToSuperview()
-```
-
-
 #### snpedgestoview
 
 ```swift
 $0.edges.equalTo(<#view#>.snp.<#constraint#>)
 ```
-
-
-#### snpheight
-
-```swift
-$0.height.equalTo(<#value#>)
-```
-
-
-#### snphorizontaltosuper
-
-```swift
-$0.horizontalEdges.equalToSuperview()
-```
-
-
-#### snphorizontaltoview
-
-```swift
-$0.horizontalEdges.equalTo(<#view#>.snp.<#constraint#>)
-```
-
-
-#### snpimageviewmake
-
-```swift
-<#name#>ImageView.snp.makeConstraints {
-    <#constraints#>
-}
-```
-
-
-#### snplabelmake
-
-```swift
-<#name#>Label.snp.makeConstraints {
-    <#constraints#>
-}
-```
-
-
-#### snpleadingtoview
-
-```swift
-$0.leading.equalTo(<#view#>.snp.<#constraint#>)
-```
-
 
 #### snpsize
 
@@ -250,46 +265,18 @@ $0.leading.equalTo(<#view#>.snp.<#constraint#>)
 $0.size.equalTo(<#value#>)
 ```
 
-
-#### snptophorizontaltosuper
-
-```swift
-$0.top.horizontalEdges.equalToSuperview()
-```
-
-
-#### snptoptoview
+#### snpheight
 
 ```swift
-$0.top.equalTo(<#view#>.snp.<#constraint#>)
+$0.height.equalTo(<#value#>)
 ```
-
-
-#### snptrailingtoview
-
-```swift
-$0.trailing.equalTo(<#view#>.snp.<#constraint#>)
-```
-
-#### snpverticaltosuper
-
-```swift
-$0.verticalEdges.equalToSuperview()
-```
-
-
-#### snpverticaltoview
-
-```swift
-$0.verticalEdges.equalTo(<#view#>.snp.<#constraint#>)
-```
-
 
 #### snpwidth
 
 ```swift
 $0.width.equalTo(<#value#>)
 ```
+
 
 ### Rx
 
