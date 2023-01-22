@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tiappearancemodel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;#View#&gt; {
+    struct Appearance: Appearance {
+        static var `default`: Appearance {
+            &lt;#appearance#&gt;
+        }
+
+        var layout: Layout
+        var backgroundColor: UIColor
+        var roundedCorners: CACornerMask
+        var cornerRadius: CGFloat
+        var shadow: UIViewShadow?
+
+        init(layout: Layout,
+             backgroundColor: UIColor,
+             roundedCorners: CACornerMask,
+             cornerRadius: CGFloat,
+             shadow: UIViewShadow?) {
+
+            self.layout = layout
+            self.backgroundColor = backgroundColor
+            self.roundedCorners = roundedCorners
+            self.cornerRadius = cornerRadius
+            self.shadow = shadow
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9114B31E-94B3-4D5A-B5A4-047F21D781C3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create Appearance model in th extension</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Appearance model</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
+
