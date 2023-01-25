@@ -11,20 +11,20 @@
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#View#&gt; {
 
-    public final class &lt;#View#&gt;Layout: UIView.BaseLayout, ViewLayout {
+    public final class Layout: UIView.BaseLayout, ViewLayout {
 
-        public static var defaultLayout: &lt;#View#&gt;Layout {
+        public static var defaultLayout: Layout {
             .init()
         }
     }
 
-    public final class &lt;#View#&gt;Appearance: UIView.BaseAppearance&lt;&lt;#View#&gt;Layout&gt;, ViewAppearance {
+    public final class Appearance: UIView.BaseAppearance&lt;Layout&gt;, ViewAppearance {
 
-        public static var defaultAppearance: &lt;#View#&gt;Appearance {
+        public static var defaultAppearance: Appearance {
             .init()
         }
 
-        public override init(layout: &lt;#View#&gt;Layout = .defaultLayout,
+        public override init(layout: &lt;#View#&gt;.Layout = .defaultLayout,
                              backgroundColor: UIColor? = nil,
                              roundedCorners: CACornerMask = [],
                              cornerRadius: CGFloat = .zero,
