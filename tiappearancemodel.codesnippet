@@ -10,28 +10,31 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#View#&gt; {
-    struct Appearance: Appearance {
-        static var `default`: Appearance {
-            &lt;#appearance#&gt;
+
+    public final class &lt;#View#&gt;Layout: UIView.BaseLayout, ViewLayout {
+
+        public static var defaultLayout: &lt;#View#&gt;Layout {
+            .init()
+        }
+    }
+
+    public final class &lt;#View#&gt;Appearance: UIView.BaseAppearance&lt;&lt;#View#&gt;Layout&gt;, ViewAppearance {
+
+        public static var defaultAppearance: &lt;#View#&gt;Appearance {
+            .init()
         }
 
-        var layout: Layout
-        var backgroundColor: UIColor
-        var roundedCorners: CACornerMask
-        var cornerRadius: CGFloat
-        var shadow: UIViewShadow?
+        public override init(layout: &lt;#View#&gt;Layout = .defaultLayout,
+                             backgroundColor: UIColor? = nil,
+                             roundedCorners: CACornerMask = [],
+                             cornerRadius: CGFloat = .zero,
+                             shadow: UIViewShadow? = nil) {
 
-        init(layout: Layout,
-             backgroundColor: UIColor,
-             roundedCorners: CACornerMask,
-             cornerRadius: CGFloat,
-             shadow: UIViewShadow?) {
-
-            self.layout = layout
-            self.backgroundColor = backgroundColor
-            self.roundedCorners = roundedCorners
-            self.cornerRadius = cornerRadius
-            self.shadow = shadow
+            super.init(layout: layout,
+                       backgroundColor: backgroundColor,
+                       roundedCorners: roundedCorners,
+                       cornerRadius: cornerRadius,
+                       shadow: shadow)
         }
     }
 }</string>
