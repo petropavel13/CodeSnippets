@@ -24,7 +24,7 @@
             .init()
         }
 
-        public override init(layout: &lt;#View#&gt;.Layout = .defaultLayout,
+        public override init(layout: Layout = .defaultLayout,
                              backgroundColor: UIColor? = nil,
                              roundedCorners: CACornerMask = [],
                              cornerRadius: CGFloat = .zero,
