@@ -25,7 +25,7 @@
         }
 
         public override init(layout: Layout = .defaultLayout,
-                             backgroundColor: UIColor? = nil,
+                             backgroundColor: UIColor = .clear,
                              roundedCorners: CACornerMask = [],
                              cornerRadius: CGFloat = .zero,
                              shadow: UIViewShadow? = nil) {
