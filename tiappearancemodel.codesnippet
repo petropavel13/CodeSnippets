@@ -10,26 +10,33 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#View#&gt; {
-
-    public final class Layout: UIView.BaseLayout, ViewLayout {
-
-        public static var defaultLayout: Layout {
-            .init()
+    
+    public final class Layout: UIView.&lt;#LayoutType#&gt;, ViewLayout {
+        
+        public static var defaultLayout: Self {
+            Self()
         }
+        
+        &lt;#customImplementation#&gt;
     }
-
+    
     public final class Appearance: UIView.BaseAppearance&lt;Layout&gt;, ViewAppearance {
-
-        public static var defaultAppearance: Appearance {
-            .init()
+        
+        public static var defaultAppearance: Self {
+            Self()
         }
-
-        public override init(layout: Layout = .defaultLayout,
-                             backgroundColor: UIColor = .clear,
-                             roundedCorners: CACornerMask = [],
-                             cornerRadius: CGFloat = .zero,
-                             shadow: UIViewShadow? = nil) {
-
+        
+        public var &lt;#customComponent#&gt;: &lt;#CustomComponentType#&gt;
+        
+        public init(layout: Layout = .defaultLayout,
+                    backgroundColor: UIColor = .clear,
+                    roundedCorners: CACornerMask = [],
+                    cornerRadius: CGFloat = .zero,
+                    shadow: UIViewShadow? = nil,
+                    &lt;#customComponent#&gt;: &lt;#CustomComponentType#&gt; = &lt;#defaultValue#&gt;) {
+            
+            self.&lt;#customComponent#&gt; = &lt;#customComponent#&gt;
+            
             super.init(layout: layout,
                        backgroundColor: backgroundColor,
                        roundedCorners: roundedCorners,
@@ -49,7 +56,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
-
