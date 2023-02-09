@@ -10,17 +10,8 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#View#&gt; {
-    
-    public final class Layout: UIView.&lt;#LayoutType#&gt;, ViewLayout {
-        
-        public static var defaultLayout: Self {
-            Self()
-        }
-        
-        &lt;#customImplementation#&gt;
-    }
-    
-    public final class Appearance: UIView.BaseAppearance&lt;Layout&gt;, ViewAppearance {
+
+    public final class Appearance: UIView.BaseAppearance&lt;UIView.&lt;#LayoutType#&gt;&gt;, ViewAppearance {
         
         public static var defaultAppearance: Self {
             Self()
@@ -28,7 +19,7 @@
         
         public var &lt;#customComponent#&gt;: &lt;#CustomComponentType#&gt;
         
-        public init(layout: Layout = .defaultLayout,
+        public init(layout: UIView.&lt;#LayoutType#&gt; = .defaultLayout,
                     backgroundColor: UIColor = .clear,
                     roundedCorners: CACornerMask = [],
                     cornerRadius: CGFloat = .zero,
