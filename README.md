@@ -123,6 +123,38 @@ func configure(with <#ViewModelName#>: <#ViewModelType#>) {
 }
 ```
 
+#### tiappearancemodel
+
+```swift
+extension <#View#> {
+
+    public final class Appearance: UIView.BaseAppearance<UIView.<#LayoutType#>>, ViewAppearance {
+
+        public static var defaultAppearance: Self {
+            Self()
+        }
+
+        public var <#customComponent#>: <#CustomComponentType#>
+
+        public init(layout: UIView.<#LayoutType#> = .defaultLayout,
+					backgroundColor: UIColor = .clear,
+					roundedCorners: CACornerMask = [],
+					cornerRadius: CGFloat = .zero,
+					shadow: UIViewShadow? = nil,
+					<#customComponent#>: <#CustomComponentType#> = <#defaultValue#>) {
+
+            self.<#customComponent#> = <#customComponent#>
+
+            super.init(layout: layout,
+                       backgroundColor: backgroundColor,
+                       roundedCorners: roundedCorners,
+                       cornerRadius: cornerRadius,
+                       shadow: shadow)
+        }
+    }
+}
+```
+
 ### SnapKit
 
 #### snpanymake
