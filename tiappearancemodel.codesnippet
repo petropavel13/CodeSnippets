@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tiappearancemodel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;#View#&gt; {
+
+    public final class Appearance: UIView.BaseAppearance&lt;UIView.&lt;#LayoutType#&gt;&gt;, ViewAppearance {
+        
+        public static var defaultAppearance: Self {
+            Self()
+        }
+        
+        public var &lt;#customComponent#&gt;: &lt;#CustomComponentType#&gt;
+        
+        public init(layout: UIView.&lt;#LayoutType#&gt; = .defaultLayout,
+                    backgroundColor: UIColor = .clear,
+                    roundedCorners: CACornerMask = [],
+                    cornerRadius: CGFloat = .zero,
+                    shadow: UIViewShadow? = nil,
+                    &lt;#customComponent#&gt;: &lt;#CustomComponentType#&gt; = &lt;#defaultValue#&gt;) {
+            
+            self.&lt;#customComponent#&gt; = &lt;#customComponent#&gt;
+            
+            super.init(layout: layout,
+                       backgroundColor: backgroundColor,
+                       roundedCorners: roundedCorners,
+                       cornerRadius: cornerRadius,
+                       shadow: shadow)
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9114B31E-94B3-4D5A-B5A4-047F21D781C3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create Appearance model in th extension</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Appearance model</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
