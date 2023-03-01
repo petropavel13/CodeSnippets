@@ -155,6 +155,21 @@ extension <#View#> {
 }
 ```
 
+#### tipreview
+
+```swift
+// MARK: - Previews
+
+import SwiftUI
+
+struct <#View#>_Previews: PreviewProvider {
+    static var previews: some View {
+        <#View#>
+            .showPreview()
+    }
+}
+```
+
 ### SnapKit
 
 #### snpanymake
